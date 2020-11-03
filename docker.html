@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Docker</title>
+    <title>Docker Tutorial</title>
 </head>
 <body>
-This is the page for the tutorial for Docker
+<link rel="stylesheet" href="docker.css">
+
+
+<div class="navbar">
+    <a href="https://ffahad30.github.io/CloudTechnology/home.html">Home</a>
+    <a href="https://ffahad30.github.io/CloudTechnology/vc.html">Virtualization and Containerization</a>
+    <a href="https://ffahad30.github.io/CloudTechnology/data.html">Data Center</a>
+    <a href="https://ffahad30.github.io/CloudTechnology/kd.html">Kubernetes and Docker</a>
+    <a href="https://ffahad30.github.io/CloudTechnology/docker.html">Docker Tutorial</a>
+</div>
+
+<h1>Docker Tutorial</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <p>First, you need to install Docker to your computer<a href=https://www.docker.com/products/docker-desktop">(Download Docker)</a>. Docker supports Ubuntu, Windows, and Mac. Then, you have to pull an Ubuntu image from Dockerhub. To do that you can use the command docker pull ubuntu.  </p>
+            <p>After you exit the Ubuntu container you have to commit a container in order to create a new Docker image; to do this you can use the command docker <em> ps -a </em>, then you have to commit it to the container ID and name the image.
+
+            </p>
+        </div>
+
+        <div class="col-1">
+            <img style="float: right; margin: 0 0 15px 15px;" src="https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg" alt="image" width="50%" height="auto" />
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p> </p>
+                <p>Then, you have to share data between the container and the host. Type in: <em>docker run -it -p </em>an IP address then the host directory followed by <em>/bin /bash</em>. Then you use the vi Editor to create an html file that will be shown on the website you put into the directory.
+                </p>
+                <p>Lastly, start the apache service using <em>/etc/init.d/apache2</em> restart. Then on your browser input the IP address and you should see your website.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
